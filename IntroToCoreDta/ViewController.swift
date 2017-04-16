@@ -20,9 +20,10 @@ class ViewController: UIViewController {
         
         let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
         
-        newUser.setValue("Joseph", forKey: "username")
+        
+        newUser.setValue("Andrew", forKey: "username")
         newUser.setValue("myPass", forKey: "password")
-        newUser.setValue(35, forKey: "age")
+        newUser.setValue(44, forKey: "age")
         
         do {
             try context.save()
